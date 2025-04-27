@@ -6,6 +6,7 @@ jobs:
   run-unit-tests:
     name: Run Unit Tests
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -14,7 +15,7 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - run: npm ci --include=dev
+      - run: npm ci
 
       - run: npm run test
 
