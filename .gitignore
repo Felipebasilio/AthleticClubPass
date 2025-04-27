@@ -1,5 +1,5 @@
 build
 node_modules
 .env
-.qodo
 coverage
+.package-lock.json
